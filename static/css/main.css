@@ -1,0 +1,899 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("Open Sans Bold.eot");
+    src: url("../fonts/Open_Sans/Open Sans Bold.eot?#iefix") format('embedded-opentype'), url("../fonts/Open_Sans/Open Sans Bold.woff2") format('woff2'), url("../fonts/Open_Sans/Open Sans Bold.woff") format('woff'), url("../fonts/Open_Sans/Open Sans Bold.svg#Open Sans Bold") format('svg');
+    unicode-range: U+0020-2074
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("../fonts/Open_Sans/Open Sans Regular.eot");
+    src: url("../fonts/Open_Sans/Open Sans Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/Open_Sans/Open Sans Regular.woff2") format('woff2'), url("../fonts/Open_Sans/Open Sans Regular.woff") format('woff'), url("../fonts/Open_Sans/Open Sans Regular.svg#Open Sans Regular") format('svg');
+    unicode-range: U+0020-2212
+}
+
+@font-face {
+    font-family: 'Mrs Sheppards';
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("../fonts/Mrs_Sheppards/Mrs Sheppards Regular.eot");
+    src: url("../fonts/Mrs_Sheppards/Mrs Sheppards Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/Mrs_Sheppards/Mrs Sheppards Regular.woff2") format('woff2'), url("../fonts/Mrs_Sheppards/Mrs Sheppards Regular.woff") format('woff'), url("../fonts/Mrs_Sheppards/Mrs Sheppards Regular.svg#Mrs Sheppards Regular") format('svg');
+    unicode-range: U+0020-00FE
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("../fonts/Josefin_Sans/Josefin Sans Regular.eot");
+    src: url("../fonts/Josefin_Sans/Josefin Sans Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/Josefin_Sans/Josefin Sans Regular.woff2") format('woff2'), url("../fonts/Josefin_Sans/Josefin Sans Regular.woff") format('woff'), url("../fonts/Josefin_Sans/Josefin Sans Regular.svg#Josefin Sans Regular") format('svg');
+    unicode-range: U+0020-2074
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("../fonts/Josefin_Sans/Josefin Sans SemiBold.eot");
+    src: url("../fonts/Josefin_Sans/Josefin Sans SemiBold.eot?#iefix") format('embedded-opentype'), url("../fonts/Josefin_Sans/Josefin Sans SemiBold.woff2") format('woff2'), url("../fonts/Josefin_Sans/Josefin Sans SemiBold.woff") format('woff'), url("../fonts/Josefin_Sans/Josefin Sans SemiBold.svg#Josefin Sans Regular") format('svg');
+    unicode-range: U+0020-2074
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    src: url(../fonts/font-awesome/FontAwesome.eot);
+    src: url(../fonts/font-awesome/FontAwesome.eot?#iefix) format('embedded-opentype'), url(../fonts/font-awesome/FontAwesome.woff2) format('woff2'), url(../fonts/font-awesome/FontAwesome.woff) format('woff'), url(../fonts/font-awesome/FontAwesome.svg#FontAwesome) format('svg');
+    unicode-range: U+0020-00D8
+}
+
+
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-size: 16px;
+    line-height: 1.3
+}
+
+body {
+    margin: 0;
+    font-family: mainFont
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section {
+    display: block
+}
+
+h1 {
+    font-size: 2em
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    overflow: visible;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+    width: 4.125rem;
+    height: .1875rem;
+    margin-bottom: 25px;
+    text-align: center;
+    border: 0;
+    background-color: #e1d9bd
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+a,
+mark {
+    color: #000
+}
+
+a {
+    -webkit-text-decoration-skip: objects;
+    text-decoration: none;
+    background-color: transparent
+}
+
+abbr[title] {
+    text-decoration: underline dotted;
+    border-bottom: none;
+    -webkit-text-decoration: underline dotted
+}
+
+b,
+strong {
+    font-weight: bolder
+}
+
+dfn {
+    font-style: italic
+}
+
+mark {
+    background-color: #ff0
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+audio,
+canvas,
+video {
+    display: inline-block
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+img {
+    border-style: none
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+}
+
+button,
+input {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+[type=reset],
+[type=submit],
+button,
+html [type=button] {
+    -webkit-appearance: button
+}
+
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
+    padding: 0;
+    border-style: none
+}
+
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring,
+button:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    padding: .35em .75em .625em
+}
+
+legend {
+    display: table;
+    max-width: 100%;
+    white-space: normal;
+    color: inherit
+}
+
+progress {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+textarea {
+    overflow: auto;
+    resize: none
+}
+
+[type=checkbox],
+[type=radio],
+legend {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    outline-offset: -2px;
+    -webkit-appearance: textfield
+}
+
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    font: inherit;
+    -webkit-appearance: button
+}
+
+summary {
+    display: list-item
+}
+
+[hidden],
+template {
+    display: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p,
+ul {
+    margin: 0
+}
+
+li,
+ul {
+    padding: 0;
+    list-style-type: none
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle
+}
+
+.social,
+section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+section {
+    position: relative;
+    max-width: 1150px;
+    margin: 0 auto
+}
+
+button,
+input,
+select {
+    outline: 0
+}
+
+*,
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.social {
+    margin-right: .75rem
+}
+
+.fa {
+    margin-left: 30px
+}
+
+nav {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+footer,
+header {
+    max-width: 1565px;
+    margin: 2.5rem auto
+}
+
+.header-img-list,
+header ul,
+nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+header ul li {
+    margin-right: .75rem
+}
+
+header h1,
+header ul a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .875rem;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.categories span,
+header ul a:hover {
+    color: #b59f5b
+}
+
+header h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4.375rem;
+    font-weight: 600;
+    line-height: 2;
+    margin-top: 4.375rem;
+    text-align: center;
+    letter-spacing: 10px
+}
+
+.header-img-list {
+    margin-top: 3.4375rem;
+    -ms-flex-pack: distribute;
+    justify-content: space-around
+}
+
+.block-image,
+.header-img {
+    position: relative;
+    overflow: hidden
+}
+
+.header-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 10.625rem;
+    background: url() no-repeat 100% 0;
+    background-size: cover;
+    width: 33%;
+    height: 22.5rem
+}
+
+.header-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    text-align: center
+}
+
+.block-image {
+    width: 100%;
+    height: 8.4375rem;
+    margin: 1.5625rem;
+    border: #e1d9bd 3px solid;
+    border-color: rgba(181, 159, 91, .5)
+}
+
+.block-image h2,
+.header-img-p,
+footer h2 {
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase
+}
+
+.block-image h2 {
+    font-size: .875rem;
+    margin: 1.1875rem 0 1.0625rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #e1d9bd
+}
+
+.header-img-p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.25rem;
+    overflow: hidden;
+    height: 3.125rem;
+    color: #fff
+}
+
+.comments,
+.date {
+    position: absolute;
+    bottom: 8px
+}
+
+.date {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .75rem;
+    font-weight: light;
+    left: 8px;
+    text-align: left;
+    color: rgba(255, 255, 255, .541)
+}
+
+.comments {
+    right: 8px;
+    color: rgba(255, 255, 255, .5)
+}
+
+footer {
+    margin: auto
+}
+
+footer h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    color: #0f0d0e
+}
+
+footer .instagram {
+    font-family: 'Mrs Sheppards', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: #b59f5b
+}
+
+footer .instagram i {
+    font-size: 18px;
+    margin-right: 10px
+}
+
+footer .insta-footer-icon {
+    font-size: 18px;
+    margin: 0 7px;
+    fill: #b59f5b
+}
+
+.footer-list-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 42px 0 25px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around
+}
+
+.footer-list-img img {
+    width: 215px;
+    margin-right: 6px
+}
+
+.footer-list-img img:last-child {
+    margin: 0
+}
+
+.footer-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80px;
+    margin: 0;
+    background-color: #f4f7f6;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.footer-block-on-top {
+    margin-bottom: 32px
+}
+
+.footer-block-on-top h2 {
+    font-family: 'Mrs Sheppards', sans-serif;
+    font-size: 30px;
+    margin: 26px 0;
+    text-align: center;
+    text-transform: lowercase;
+    color: #0f0d0e
+}
+
+.footer-block-on-top p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: #a9a9a9
+}
+
+.section-list {
+    margin-right: 110px
+}
+
+.section-block,
+.section-post {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.section-post {
+    margin-top: 120px;
+    margin-bottom: 60px;
+    width: 780px;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end
+}
+
+.section-post img {
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    width: 382px;
+    height: 293px
+}
+
+.section-block {
+    flex-direction: column;
+    width: 435px;
+    height: 365px;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.section-block-top {
+    z-index: 1;
+    height: 10.3125rem;
+    padding-left: 88px;
+    border: #e1d9bd 3px solid;
+    border-color: rgba(181, 159, 91, .5)
+}
+
+.section-block-text,
+.section-block-top h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .875rem
+}
+
+.section-block-top h2 {
+    font-weight: 600;
+    margin: 1.1875rem 0 1.0625rem;
+    text-align: left;
+    text-transform: uppercase;
+    color: #e1d9bd
+}
+
+.section-block-top .section-img-p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.2;
+    height: 3.125rem;
+    text-align: left;
+    text-transform: uppercase
+}
+
+.section-block-text {
+    line-height: 1.4;
+    margin: 30px 0 30px 88px;
+    color: rgba(15, 13, 14, .7)
+}
+
+.date-block {
+    padding-top: 20px
+}
+
+.date-block p {
+    display: inline-block
+}
+
+.author,
+.section-date {
+    font-family: 'Open Sans', sans-serif
+}
+
+.author {
+    font-size: 12px;
+    margin-left: 20px;
+    font-weight: 600
+}
+
+.section-date {
+    font-size: .75rem;
+    font-weight: light;
+    color: rgba(0, 0, 0, .5)
+}
+
+.bottom-social-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #eee;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.fa-comment {
+    margin: 0 10px 0 0
+}
+
+.section-social .share {
+    font-family: 'Raleway', sans-serif;
+    font-size: 11px;
+    color: rgba(15, 13, 14, .5)
+}
+
+.section-comments,
+.subscribe h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600
+}
+
+.subscribe {
+    display: block;
+    float: right
+}
+
+.subscribe h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase
+}
+
+input[type=mail] {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    width: 270px;
+    height: 50px;
+    margin: 0 0 18px;
+    padding-left: 20px;
+    color: #020202;
+    border: 0;
+    background-color: #f4f7f6
+}
+
+.aside h2,
+input[value=subscribe] {
+    font-size: 14px;
+    text-transform: uppercase
+}
+
+input[value=subscribe] {
+    font-weight: 600;
+    width: 270px;
+    height: 50px;
+    color: #fff;
+    border: 0;
+    background-color: #b59f5b;
+    font-family: 'Raleway', sans-serif
+}
+
+input[value=subscribe]:active {
+    background-color: #020202
+}
+
+.about-me,
+.aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column
+}
+
+.aside h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 35px;
+    text-align: center
+}
+
+.about-me {
+    position: relative;
+    width: 270px;
+    height: 350px;
+    margin-top: 180px;
+    padding: 70px 20px 0;
+    border: #e1d9bd 3px solid;
+    border-color: rgba(181, 159, 91, .5);
+    -ms-flex-pack: distribute;
+    justify-content: space-around
+}
+
+.about-me .round {
+    position: absolute;
+    top: -100px;
+    left: 36px;
+    width: 193px;
+    height: 193px;
+    border-radius: 50%;
+    background: url(../img/content/about-me.jpg) no-repeat;
+    background-color: #eee;
+    background-position: 28px 20px;
+    background-size: auto 193px
+}
+
+.about-me p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    text-align: center;
+    color: #0f0d0e
+}
+
+.about-me .follow-me {
+    font-family: 'Mrs Sheppards', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: #b59f5b
+}
+
+.gallery hr {
+    margin-bottom: 20px
+}
+
+.gallery img {
+    width: 82px;
+    margin: 4px
+}
+
+.categories {
+    margin-top: 40px
+}
+
+.block-post p,
+.categories li,
+.tags li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600
+}
+
+.categories li {
+    font-size: 14px;
+    padding: 10px;
+    border-bottom: 1px #eee solid
+}
+
+.search,
+.tags ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.search input[type=search] {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    width: 222px;
+    height: 50px;
+    padding: 20px;
+    border: 0;
+    background-color: #f4f7f6
+}
+
+.search input[type=submit] {
+    width: 50px;
+    border: 0;
+    background-color: #b59f5b
+}
+
+.tags ul {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.block-post p,
+.tags li {
+    text-transform: uppercase
+}
+
+.tags li {
+    margin: 4px 4px 0 0;
+    padding: 4px 8px;
+    border: 3px solid #eee;
+    font-size: 12px
+}
+
+.banner .banner-img {
+    height: 368px;
+    background: url(../img/content/banner.jpg)
+}
+
+.block-post,
+.block-post .content-post {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.block-post {
+    height: 70px;
+    margin-bottom: 20px
+}
+
+.block-post .content-post {
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column
+}
+
+.block-post .post-date {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    text-transform: lowercase;
+    color: #acacac
+}
+
+.block-post img {
+    width: 70px;
+    margin-right: 16px
+}
+
+.block-post p {
+    font-size: 14px
+}
